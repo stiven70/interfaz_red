@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('duracion');
             $table->string('descripcion')->nullable();
 
-            $table->foreignId('id_estructura')
+            $table->foreignId('estructura_id')
             ->nullable()
             ->constrained('estructuras')
             ->cascadeOnDelete()
